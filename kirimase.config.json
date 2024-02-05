@@ -1,0 +1,16 @@
+{
+  "hasSrc": false,
+  "packages": [
+    "prisma",
+    "clerk",
+    "trpc",
+    "resend",
+    "stripe"
+  ],
+  "preferredPackageManager": "pnpm",
+  "rootPath": "",
+  "componentLib": null,
+  "orm": "prisma",
+  "driver": "pg",
+  "auth": "clerk"
+}
