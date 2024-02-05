@@ -10,6 +10,8 @@ import {
   useMotionValue,
   useTransform,
 } from "framer-motion"
+import { ModeToggle } from "./mode-toggle"
+import { Avatar } from "./avatar"
 
 export default function Nav() {
   const links = [
@@ -60,14 +62,14 @@ export default function Nav() {
   }
 
   return (
-    <nav className="p-8">
-      <ul className="flex gap-12">
+    <nav className="p-8 flex justify-between items-center max-w-7xl mx-auto">
+      <ul className="flex gap-x-6">
         <AnimatePresence>
           {links.map((link) => {
-             const x = useMotionValue(0)
-             const y = useMotionValue(0)
-             const textX = useTransform(x, (latest) => latest * 0.5)
-             const textY = useTransform(y, (latest) => latest * 0.5)
+            const x = useMotionValue(0)
+            const y = useMotionValue(0)
+            const textX = useTransform(x, (latest) => latest * 0.5)
+            const textY = useTransform(y, (latest) => latest * 0.5)
             return (
               <motion.li
                 onPointerMove={(event) => {
@@ -107,6 +109,10 @@ export default function Nav() {
           })}
         </AnimatePresence>
       </ul>
+      <div className="flex items-center gap-x-4">
+        <Avatar />
+        <ModeToggle />
+      </div>
     </nav>
   )
 }
