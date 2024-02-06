@@ -1,6 +1,7 @@
+import "@/styles/globals.css";
+import "@/styles/clerk.css";
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
-import "./globals.css";
 import { Providers } from "@/components/providers";
 import { ClerkProvider } from "@clerk/nextjs";
 import { cn } from "@/lib/utils";
