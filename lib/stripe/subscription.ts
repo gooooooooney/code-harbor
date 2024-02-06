@@ -1,7 +1,7 @@
 import { storeSubscriptionPlans } from "@/config/subscriptions";
 import { db } from "@/lib/db";
 import { stripe } from "@/lib/stripe";
-import { getUserAuth } from "../auth/utils";
+import { getUserAuth } from "@/lib/auth/utils";
 
 export async function getUserSubscriptionPlan() {
   const { session } = await getUserAuth();

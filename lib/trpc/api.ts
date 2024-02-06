@@ -1,6 +1,5 @@
 import { cookies } from "next/headers";
-  //  import { getUserAuth } from "../auth/utils";
-import { appRouter } from "../server/routers/_app";
+import { appRouter } from "@/lib/server/routers/_app";
 import { loggerLink } from "@trpc/client";
 import { experimental_createTRPCNextAppDirServer as createTRPCNextAppDirServer } from "@trpc/next/app-dir/server";
 import { experimental_nextCacheLink as nextCacheLink } from "@trpc/next/app-dir/links/nextCache";

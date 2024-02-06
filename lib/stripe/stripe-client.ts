@@ -1,5 +1,5 @@
 import { Stripe, loadStripe } from '@stripe/stripe-js';
-import { env } from '../env.mjs';
+import { env } from '@/lib/env.mjs';
 
 let stripePromise: Promise<Stripe | null>;
 const getStripe = (connectedAccountId?: string) => {

@@ -19,7 +19,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
+    <ClerkProvider
+
+    >
       <html
         className={cn(inter.className, "antialiased")}
         lang="zh-CN"

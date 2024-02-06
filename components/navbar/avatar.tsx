@@ -1,8 +1,8 @@
 import React from 'react'
 import { SignInButton, SignedIn, SignedOut, UserButton, currentUser } from '@clerk/nextjs'
 import { Button, buttonVariants } from '@/components/ui/button';
-import { EmailIcon, GithubIcon, GoogleIcon, UserIcon } from '../icons';
-import { Tip } from '../ui/tip';
+import { EmailIcon, GithubIcon, GoogleIcon, UserIcon } from '@/components/icons';
+import { Tip } from '@/components/ui/tip';
 import { cn } from '@/lib/utils';
 
 const StrategyIcon = ({ strategy }: { strategy: string }) => {
